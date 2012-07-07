@@ -3,7 +3,7 @@
 set fish_greeting ""
 
 # source all of the files in the function directory
-for f in (find ~/.config/fish/functions -type f)
+for f in ~/.config/fish/functions/*.fish
   . $f
 end
 
