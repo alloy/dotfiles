@@ -17,6 +17,8 @@ set PATH /opt/local/bin $PATH
 # vim and give it a fake environment variable.
 set SHELL (which sh)
 
+set -x EDITOR "mvim -f"
+
 function -d "Open the working directory with mvim" m
   mvim .
 end
