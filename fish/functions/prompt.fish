@@ -14,10 +14,10 @@ function fish_prompt
   with_color $fish_color_cwd -n (prompt_pwd)
 
   if is-git
-    set-git-color
+    printf " "
+    with_color (git-status-color) -n [(git-branch)]
   end
 
   printf " » "
-  set_color normal
 end
 

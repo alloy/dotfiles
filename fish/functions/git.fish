@@ -12,14 +12,18 @@ function -d "Return true if this is a git repository." is-git
 end
 
 
-function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." set-git-color
+function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." git-status-color
   if git diff --quiet
     if git diff --staged --quiet
-      set_color $git_clean
+      printf $git_clean
     else
-      set_color $git_uncommitted
+      printf $git_uncommitted
     end
   else
-    set_color $git_dirty
+    printf $git_dirty
   end
+end
+
+function -d "returns the current branch name" git-branch
+  printf (git rev-parse --abbrev-ref HEAD)
 end
