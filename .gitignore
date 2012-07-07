@@ -1,0 +1,5 @@
+*.cache
+*.sw*
+
+fish/fish_history
+fish/fishd.*.local
