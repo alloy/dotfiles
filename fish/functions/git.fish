@@ -24,6 +24,7 @@ function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." 
   end
 end
 
+
 function -d "returns the current branch name" git-branch
   printf (git rev-parse --abbrev-ref HEAD)
 end

@@ -10,6 +10,7 @@ function with_color -d "set_color to the first argument and pass the rest to ech
   set_color normal
 end
 
+
 function fish_prompt
   with_color $fish_color_cwd -n (prompt_pwd)
 
