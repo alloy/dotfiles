@@ -23,4 +23,3 @@ function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." 
     set_color $git_dirty
   end
 end
-
