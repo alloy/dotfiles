@@ -1,0 +1,22 @@
+[alias]
+  ba  = branch -a
+  bd  = branch -D
+  ch  = checkout
+  chb = checkout -b
+  st  = status
+  cv  = commit -v
+  cva = commit -a -v
+  wtf = !git-wtf
+
+[core]
+  excludesfile = ~/.config/git/ignore
+
+[help]
+  autocorrect = 1
+
+[push]
+  default = current
+
+[user]
+  name = Eloy Durán
+  email = eloy.de.enige@gmail.com
