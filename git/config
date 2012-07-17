@@ -4,8 +4,8 @@
   ch  = checkout
   chb = checkout -b
   st  = status
-  cv  = commit -v
-  cva = commit -a -v
+  ci  = commit -v
+  cia = commit -a -v
   wtf = !git-wtf
 
 [core]
