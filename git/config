@@ -3,6 +3,7 @@
   bd  = branch -D
   ch  = checkout
   chb = checkout -b
+  chm = checkout master
   st  = status
   ci  = commit -v
   cia = commit -a -v
