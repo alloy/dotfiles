@@ -29,3 +29,18 @@ end
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
+
+
+### bundler
+
+function be
+  bundle exec $argv
+end
+
+function bi
+  bundle install
+end
+
+function bu
+  bundle update
+end
