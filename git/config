@@ -5,8 +5,10 @@
   chb = checkout -b
   chm = checkout master
   st  = status
+  ca  = commit --amend
   ci  = commit -v
   cia = commit -a -v
+  r   = rebase -i
   wtf = !git-wtf
 
 [core]
