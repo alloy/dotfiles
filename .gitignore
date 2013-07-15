@@ -3,3 +3,6 @@
 
 fish/fish_history
 fish/fishd.*
+
+# From random tools that dump stuff into .config by themselves.
+gtk*
