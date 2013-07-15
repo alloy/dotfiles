@@ -15,7 +15,7 @@ set PATH /opt/local/bin $PATH
 # vim and some other things rely on SHELL being a posixy sh this may cause
 # problems in the future, in which case I'll define a little function to wrap
 # vim and give it a fake environment variable.
-set SHELL (which sh)
+set -x SHELL (which sh)
 
 set -x EDITOR "mvim -f"
 
