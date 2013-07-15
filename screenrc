@@ -1,0 +1,4 @@
+defshell fish
+startup_message off
+hardstatus string "screen (%n: %t)"
+caption always
