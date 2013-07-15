@@ -1,6 +1,6 @@
 CONFIG_ROOT = File.expand_path('../', __FILE__)
 
-def symlink(from, to)
+def config_symlink(from, to)
   from = File.join(CONFIG_ROOT, from)
   if !File.exist?(to)
     ln_s(from, to)
@@ -20,7 +20,8 @@ end
 desc 'Install the config files'
 task :install do
   Dir.chdir(ENV['HOME']) do
-    symlink 'git/config', '.gitconfig'
+    config_symlink 'git/config', '.gitconfig'
+    config_symlink 'screenrc', '.screenrc'
   end
 end
 
