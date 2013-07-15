@@ -1,4 +1,8 @@
 defshell fish
+defscrollback 2000
+
 startup_message off
+
+hardstatus on
+hardstatus alwayslastline
 hardstatus string "screen (%n: %t)"
-caption always
