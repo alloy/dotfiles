@@ -1441,7 +1441,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>0</string>
 	<key>NSColorPanelVisibleSwatchRows</key>
 	<integer>1</integer>
 	<key>NSFontPanelAttributes</key>
@@ -1449,7 +1449,7 @@
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.config</string>
+	<string>~/.config/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1461,15 +1461,15 @@
 	<key>NSWindow Frame Config Panel</key>
 	<string>719 125 273 550 0 0 1280 778 </string>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>427 281 201 309 0 0 1280 778 </string>
+	<string>644 422 201 309 0 0 1920 1200 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>769 77 445 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>861 134 924 485 0 0 1920 1178 </string>
+	<string>2256 270 924 485 1920 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>357 322 566 395 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2316 430 1153 386 1920 0 1920 1200 </string>
+	<string>738 -18 1215 604 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>552 315 487 442 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -1655,9 +1655,9 @@
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.32549020648002625</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.22352941334247589</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -2017,7 +2017,7 @@
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Cursor Color</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
@@ -2185,7 +2185,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/eloy/.config</string>
+	<string>/Users/eloy/.config/iTerm</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2210,6 +2210,8 @@
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
