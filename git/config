@@ -23,3 +23,6 @@
 [user]
   name = Eloy Durán
   email = eloy.de.enige@gmail.com
+
+[color]
+  ui = true
