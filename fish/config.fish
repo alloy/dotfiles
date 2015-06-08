@@ -44,3 +44,7 @@ end
 function bu
   bundle update
 end
+
+### Node Version Manager
+
+source ~/.config/fish/nvm-wrapper/nvm.fish
