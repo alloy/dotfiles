@@ -24,14 +24,14 @@ function -d "Open the working directory with mvim" m
 end
 
 
-### rbenv
+### Ruby
 
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+#set PATH $HOME/.rbenv/bin $PATH
+#set PATH $HOME/.rbenv/shims $PATH
+#rbenv rehash >/dev/null ^&1
 
-
-### bundler
+set -x GEM_HOME $HOME/.gem
+set PATH $GEM_HOME/bin $PATH
 
 function be
   bundle exec $argv

@@ -1,3 +1,2 @@
 gem:
-  --bindir /usr/local/bin
   --no-ri --no-rdoc
