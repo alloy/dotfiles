@@ -22,6 +22,7 @@ task :install do
   Dir.chdir(ENV['HOME']) do
     config_symlink 'git/config', '.gitconfig'
     config_symlink 'screenrc', '.screenrc'
+    config_symlink 'ruby/gemrc.yml', '.gemrc'
   end
 end
 
