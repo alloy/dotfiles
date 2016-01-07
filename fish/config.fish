@@ -23,12 +23,14 @@ function -d "Open the working directory with mvim" m
   mvim .
 end
 
+# This env var is used by e.g. the various Podfiles to either pull in OSS or
+# closed source libs.
+set -x ARTSY_STAFF_MEMBER "1"
 
 ### Ruby
 
-#set PATH $HOME/.rbenv/bin $PATH
-#set PATH $HOME/.rbenv/shims $PATH
-#rbenv rehash >/dev/null ^&1
+source /usr/local/share/chruby/chruby.fish
+source /usr/local/share/chruby/auto.fish
 
 set -x GEM_HOME $HOME/.gem
 set PATH $GEM_HOME/bin $PATH
