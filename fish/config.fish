@@ -18,6 +18,7 @@ set PATH /opt/local/bin $PATH
 set -x SHELL (which sh)
 
 set -x EDITOR "mvim -f"
+set -x REACT_EDITOR code
 
 function -d "Open the working directory with mvim" m
   mvim .
