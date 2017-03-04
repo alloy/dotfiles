@@ -26,6 +26,7 @@ end
 
 # Use https://hub.github.com as if it were git
 eval (hub alias -s)
+source /usr/local/share/fish/vendor_completions.d/hub.fish
 
 # This env var is used by e.g. the various Podfiles to either pull in OSS or
 # closed source libs.
