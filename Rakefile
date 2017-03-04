@@ -23,6 +23,7 @@ task :install do
     config_symlink 'git/config', '.gitconfig'
     config_symlink 'screenrc', '.screenrc'
     config_symlink 'ruby/gemrc.yml', '.gemrc'
+    config_symlink 'editorconfig', '.editorconfig'
   end
 end
 
