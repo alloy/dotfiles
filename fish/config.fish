@@ -25,7 +25,7 @@ function -d "Open the working directory with mvim" m
 end
 
 # Use https://hub.github.com as if it were git
-alias git hub
+eval (hub alias -s)
 
 # This env var is used by e.g. the various Podfiles to either pull in OSS or
 # closed source libs.
