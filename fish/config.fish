@@ -24,6 +24,9 @@ function -d "Open the working directory with mvim" m
   mvim .
 end
 
+# Use https://hub.github.com as if it were git
+alias git hub
+
 # This env var is used by e.g. the various Podfiles to either pull in OSS or
 # closed source libs.
 set -x ARTSY_STAFF_MEMBER "1"
