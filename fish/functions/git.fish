@@ -3,7 +3,7 @@ set git_clean cyan
 set git_uncommitted magenta
 
 
-function -d "Return true if this is a git repository." is-git
+function is-git
   if git rev-parse --is-inside-work-tree > /dev/null ^ /dev/null
     return 0
   else
@@ -12,7 +12,7 @@ function -d "Return true if this is a git repository." is-git
 end
 
 
-function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." git-status-color
+function git-status-color
   if git diff --quiet
     if git diff --staged --quiet
       printf $git_clean
@@ -25,6 +25,6 @@ function -d "set_color to git_clean, git_dirty, or git_uncommitted, depending." 
 end
 
 
-function -d "returns the current branch name" git-branch
+function git-branch
   printf (git rev-parse --abbrev-ref HEAD)
 end

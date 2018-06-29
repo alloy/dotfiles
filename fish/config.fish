@@ -10,19 +10,13 @@ end
 
 ### general
 
-set PATH /opt/local/bin $PATH
-
 # vim and some other things rely on SHELL being a posixy sh this may cause
 # problems in the future, in which case I'll define a little function to wrap
 # vim and give it a fake environment variable.
 set -x SHELL (which sh)
 
-set -x EDITOR "mvim -f"
+set -x EDITOR "code -w"
 set -x REACT_EDITOR code
-
-function -d "Open the working directory with mvim" m
-  mvim .
-end
 
 # Use https://hub.github.com as if it were git
 eval (hub alias -s)
