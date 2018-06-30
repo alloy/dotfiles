@@ -18,10 +18,6 @@ set -x SHELL (which sh)
 set -x EDITOR "code -w"
 set -x REACT_EDITOR code
 
-# Use https://hub.github.com as if it were git
-eval (hub alias -s)
-source /usr/local/share/fish/vendor_completions.d/hub.fish
-
 # This env var is used by e.g. the various Podfiles to either pull in OSS or
 # closed source libs.
 set -x ARTSY_STAFF_MEMBER "1"
@@ -46,6 +42,9 @@ function bu
   bundle update
 end
 
-### Node Version Manager
+# Use https://hub.github.com as if it were git
+eval (hub alias -s)
+source /usr/local/share/fish/vendor_completions.d/hub.fish
 
 source ~/.config/fish/nvm-wrapper/nvm.fish
+source ~/.config/fish/credentials.fish

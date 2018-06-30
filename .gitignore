@@ -1,6 +1,7 @@
 *.cache
 *.sw*
 
+fish/credentials.fish
 fish/fish_history
 fish/fishd.*
 
