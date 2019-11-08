@@ -42,9 +42,14 @@ function bu
   bundle update
 end
 
+source ~/.config/fish/credentials.fish
+
 # Use https://hub.github.com as if it were git
 eval (hub alias -s)
 source /usr/local/share/fish/vendor_completions.d/hub.fish
 
+# Setup Node version manager
 source ~/.config/fish/nvm-wrapper/nvm.fish
-source ~/.config/fish/credentials.fish
+nvm use default 2>&1 >/dev/null
+
+set PATH ./bin $PATH

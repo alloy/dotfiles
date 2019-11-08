@@ -12,7 +12,7 @@
   wtf = !git-wtf
 
 [core]
-  excludesfile = ~/.config/git/ignore
+	excludesfile = /Users/eloy/.config/git/ignore
 
 [help]
   autocorrect = 1
@@ -30,7 +30,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
