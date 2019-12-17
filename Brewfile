@@ -1,4 +1,4 @@
-tao "homebrew/core"
+tap "homebrew/core"
 tap "homebrew/cask"
 brew "ack"
 brew "fish"
