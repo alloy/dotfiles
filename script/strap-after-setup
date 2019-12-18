@@ -17,4 +17,4 @@ then
 fi
 
 mkdir ~/.nvm
-ln -s (brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh
+ln -s $(brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh
