@@ -3,18 +3,6 @@
 
 cd $(dirname $0)/..
 
-touch config/fish/credentials.fish
-
-FISH=$(which fish)
-
-if ! grep -q "$FISH" /etc/shells; then
-  echo $FISH | sudo tee -a /etc/shells
-fi
-
-if [ "$SHELL" != "$FISH" ]
-then
-  sudo chsh -s $FISH $USER
-fi
-
-mkdir ~/.nvm
-ln -s $(brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh
+script/setup-fish
+script/setup-nvm
+script/setup-vscode-extensions
