@@ -36,3 +36,5 @@
 	helper = osxkeychain
 [hub]
 	protocol = https
+[github]
+	user = alloy

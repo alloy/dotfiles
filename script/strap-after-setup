@@ -15,3 +15,6 @@ if [ "$SHELL" != "$FISH" ]
 then
   sudo chsh -s $FISH $USER
 fi
+
+mkdir ~/.nvm
+ln -s (brew --prefix nvm)/nvm.sh ~/.nvm/nvm.sh

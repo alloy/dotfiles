@@ -1,9 +1,9 @@
 *.cache
 *.sw*
 
-fish/credentials.fish
-fish/fish_history
-fish/fishd.*
+config/fish/credentials.fish
+config/fish/fish_history
+config/fish/fishd.*
 
 # From random tools that dump stuff into .config by themselves.
 gtk*
