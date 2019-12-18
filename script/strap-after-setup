@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run by Strap after installing Brewfile dependencies
+
+FISH=$(which fish)
+
+if ! grep -q "$FISH" /etc/shells; then
+  echo $FISH | sudo tee -a /etc/shells
+fi
+
+if [ "$SHELL" != "$FISH" ]
+then
+  sudo chsh -s $FISH $USER
+fi
