@@ -7,3 +7,5 @@ config/fish/fishd.*
 
 # From random tools that dump stuff into .config by themselves.
 gtk*
+config/hub
+config/configstore/update-notifier-npm.json
