@@ -21,6 +21,13 @@ set PATH $BREW_HOME/bin $PATH
 
 ### general
 
+# Windows adds an entry to the path that contains parentheses, but nvm-wrapper
+# doesn't escape those.
+# FIXME: Switch to `bass` from `nvm-wrapper`
+if set -l remove_from_path_index (contains -i -- "/mnt/c/Program Files (x86)" $PATH)
+  set -e $PATH[$remove_from_path_index]
+end
+
 # vim and some other things rely on SHELL being a posixy sh this may cause
 # problems in the future, in which case I'll define a little function to wrap
 # vim and give it a fake environment variable.
