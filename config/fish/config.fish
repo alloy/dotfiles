@@ -45,6 +45,8 @@ set -x ARTSY_STAFF_MEMBER "1"
 source $BREW_HOME/share/chruby/chruby.fish
 source $BREW_HOME/share/chruby/auto.fish
 
+set -x CHRUBY_ROOT $BREW_HOME
+
 set -x GEM_HOME $HOME/.gem
 set PATH $GEM_HOME/bin $PATH
 
