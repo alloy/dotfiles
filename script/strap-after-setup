@@ -3,6 +3,8 @@
 
 cd $(dirname $0)/..
 
+git submodule update --init
+
 script/setup-fish
 script/setup-nvm
 script/setup-vscode-extensions
