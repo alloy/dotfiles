@@ -17,6 +17,8 @@ else
   set -x BREW_HOME "/usr/local"
 end
 
+set PATH $BREW_HOME/bin $PATH
+
 ### general
 
 # vim and some other things rely on SHELL being a posixy sh this may cause
@@ -60,5 +62,3 @@ source $BREW_HOME/share/fish/vendor_completions.d/hub.fish
 # Setup Node version manager
 source ~/.config/fish/nvm-wrapper/nvm.fish
 nvm use default 2>&1 >/dev/null
-
-set PATH ./bin $PATH
