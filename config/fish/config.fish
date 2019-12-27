@@ -7,6 +7,15 @@ for f in ~/.config/fish/functions/*.fish
   . $f
 end
 
+### Homebrew
+
+if test -d /home/linuxbrew/.linuxbrew
+  # linux
+  set -x BREW_HOME "/home/linuxbrew/.linuxbrew"
+else
+  # macOS
+  set -x BREW_HOME "/usr/local"
+end
 
 ### general
 
@@ -24,8 +33,8 @@ set -x ARTSY_STAFF_MEMBER "1"
 
 ### Ruby
 
-source /usr/local/share/chruby/chruby.fish
-source /usr/local/share/chruby/auto.fish
+source $BREW_HOME/share/chruby/chruby.fish
+source $BREW_HOME/share/chruby/auto.fish
 
 set -x GEM_HOME $HOME/.gem
 set PATH $GEM_HOME/bin $PATH
@@ -46,7 +55,7 @@ source ~/.config/fish/credentials.fish
 
 # Use https://hub.github.com as if it were git
 eval (hub alias -s)
-source /usr/local/share/fish/vendor_completions.d/hub.fish
+source $BREW_HOME/share/fish/vendor_completions.d/hub.fish
 
 # Setup Node version manager
 source ~/.config/fish/nvm-wrapper/nvm.fish
