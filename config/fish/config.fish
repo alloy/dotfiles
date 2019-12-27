@@ -24,7 +24,7 @@ set PATH $BREW_HOME/bin $PATH
 # Windows adds an entry to the path that contains parentheses, but nvm-wrapper
 # doesn't escape those.
 # FIXME: Switch to `bass` from `nvm-wrapper`
-if set -l remove_from_path_index (contains -i -- "/mnt/c/Program Files (x86)" $PATH)
+if set -l remove_from_path_index (contains -i -- "/mnt/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2/wbin" $PATH)
   set -e $PATH[$remove_from_path_index]
 end
 
