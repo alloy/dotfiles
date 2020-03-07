@@ -71,3 +71,9 @@ source $BREW_HOME/share/fish/vendor_completions.d/hub.fish
 # Setup Node version manager
 source ~/.config/fish/nvm-wrapper/nvm.fish
 nvm use default 2>&1 >/dev/null
+
+# Android
+
+set -x ANDROID_HOME $HOME/Library/Android/sdk
+set -x ANDROID_NDK_HOME $HOME/Library/Android/android-ndk-r21
+set PATH $PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools

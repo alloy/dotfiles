@@ -1,5 +1,8 @@
 {
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.scrollback": 10000,
+    "window.zoomLevel": 0,
+    "files.autoSave": "onFocusChange"
 }
