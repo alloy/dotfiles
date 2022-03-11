@@ -36,10 +36,6 @@ set -x SHELL (which sh)
 set -x EDITOR "code -w"
 set -x REACT_EDITOR code
 
-# This env var is used by e.g. the various Podfiles to either pull in OSS or
-# closed source libs.
-set -x ARTSY_STAFF_MEMBER "1"
-
 ### Ruby
 
 source $BREW_HOME/share/chruby/chruby.fish
@@ -75,5 +71,5 @@ nvm use default 2>&1 >/dev/null
 # Android
 
 set -x ANDROID_HOME $HOME/Library/Android/sdk
-set -x ANDROID_NDK_HOME $HOME/Library/Android/android-ndk-r21
+set -x ANDROID_NDK_HOME $HOME/Library/Android/android-ndk-r19c
 set PATH $PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools

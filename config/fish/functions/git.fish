@@ -4,7 +4,7 @@ set git_uncommitted magenta
 
 
 function is-git
-  if git rev-parse --is-inside-work-tree > /dev/null ^ /dev/null
+  if git rev-parse --is-inside-work-tree &> /dev/null
     return 0
   else
     return 1
