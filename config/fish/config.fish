@@ -21,6 +21,8 @@ set PATH $BREW_HOME/bin $PATH
 
 ### general
 
+source ~/.config/fish/credentials.fish
+
 alias code="code-insiders"
 
 # Windows adds an entry to the path that contains parentheses, but nvm-wrapper
@@ -40,27 +42,27 @@ set -x REACT_EDITOR code
 
 ### Ruby
 
-source $BREW_HOME/share/chruby/chruby.fish
-source $BREW_HOME/share/chruby/auto.fish
+if test -d $BREW_HOME/share/chruby
+  source $BREW_HOME/share/chruby/chruby.fish
+  source $BREW_HOME/share/chruby/auto.fish
 
-set -x CHRUBY_ROOT $BREW_HOME
+  set -x CHRUBY_ROOT $BREW_HOME
 
-set -x GEM_HOME $HOME/.gem
-set PATH $GEM_HOME/bin $PATH
+  set -x GEM_HOME $HOME/.gem
+  set PATH $GEM_HOME/bin $PATH
 
-function be
-  bundle exec $argv
+  function be
+    bundle exec $argv
+  end
+
+  function bi
+    bundle install
+  end
+
+  function bu
+    bundle update
+  end
 end
-
-function bi
-  bundle install
-end
-
-function bu
-  bundle update
-end
-
-source ~/.config/fish/credentials.fish
 
 # Use https://hub.github.com as if it were git
 eval (hub alias -s)
