@@ -14,12 +14,14 @@ if test -d /home/linuxbrew/.linuxbrew
   set -x BREW_HOME "/home/linuxbrew/.linuxbrew"
 else
   # macOS
-  set -x BREW_HOME "/usr/local"
+  set -x BREW_HOME "/opt/homebrew"
 end
 
 set PATH $BREW_HOME/bin $PATH
 
 ### general
+
+alias code="code-insiders"
 
 # Windows adds an entry to the path that contains parentheses, but nvm-wrapper
 # doesn't escape those.
@@ -33,7 +35,7 @@ end
 # vim and give it a fake environment variable.
 set -x SHELL (which sh)
 
-set -x EDITOR "code -w"
+set -x EDITOR "code-insiders -w"
 set -x REACT_EDITOR code
 
 ### Ruby
@@ -71,5 +73,5 @@ nvm use default 2>&1 >/dev/null
 # Android
 
 set -x ANDROID_HOME $HOME/Library/Android/sdk
-set -x ANDROID_NDK_HOME $HOME/Library/Android/android-ndk-r19c
+set -x ANDROID_NDK_HOME $HOME/Library/Android/android-ndk-r21
 set PATH $PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools
