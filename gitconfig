@@ -47,3 +47,5 @@
 
 [github]
 	user = alloy
+[safe]
+	directory = /Users/eloy/Code/Microsoft/teams-modular-packages

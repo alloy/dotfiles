@@ -7,19 +7,9 @@ for f in ~/.config/fish/functions/*.fish
   . $f
 end
 
-### Homebrew
-
-if test -d /home/linuxbrew/.linuxbrew
-  # linux
-  set -x BREW_HOME "/home/linuxbrew/.linuxbrew"
-else
-  # macOS
-  set -x BREW_HOME "/opt/homebrew"
-end
-
-set PATH $BREW_HOME/bin $PATH
-
 ### general
+
+set PATH /usr/local/bin $PATH
 
 source ~/.config/fish/credentials.fish
 
@@ -39,6 +29,18 @@ set -x SHELL (which sh)
 
 set -x EDITOR "code-insiders -w"
 set -x REACT_EDITOR code
+
+### Homebrew
+
+if test -d /home/linuxbrew/.linuxbrew
+  # linux
+  set -x BREW_HOME "/home/linuxbrew/.linuxbrew"
+else
+  # macOS
+  set -x BREW_HOME "/opt/homebrew"
+end
+
+set PATH $BREW_HOME/bin $PATH
 
 ### Ruby
 
